@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include akwad *.css
+recursive-include akwad *.csv
+recursive-include akwad *.html
+recursive-include akwad *.ico
+recursive-include akwad *.js
+recursive-include akwad *.json
+recursive-include akwad *.md
+recursive-include akwad *.png
+recursive-include akwad *.py
+recursive-include akwad *.svg
+recursive-include akwad *.txt
+recursive-exclude akwad *.pyc
