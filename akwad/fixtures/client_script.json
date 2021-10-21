@@ -1,0 +1,15 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Task",
+  "enabled": 0,
+  "modified": "2021-05-24 10:33:45.712548",
+  "name": "Task-Form",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Task', {\n\trefresh(frm) {\n\t\t// your code here\n\t\tif(frm.doc.priority==\"Low\") {\n\t\t    frm.doc.task_weight=10;\n\t\t}\n\t\telse if (frm.doc.priority==\"Medium\") {\n\t\t    frm.doc.task_weight=20;\n\t\t}\n\t\telse if (frm.doc.priority==\"High\") {\n\t\t    frm.doc.task_weight=30;\n\t\t}\n\t\telse {\n\t\t    frm.doc.task_weight=40;\n\t\t}\n\t}\n})",
+  "view": "Form"
+ }
+]

@@ -1,0 +1,162 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Employee Advance",
+  "is_active": 1,
+  "modified": "2021-08-31 11:51:46.219624",
+  "name": "Employee Advance",
+  "override_status": 1,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Employee Advance Approver",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Employee Advance",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Waiting for LM",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Employee Advance Approver",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Employee Advance",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Rejected for LM",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Employee Advance Approver",
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Employee Advance",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Approved By All",
+    "update_field": null,
+    "update_value": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Employee Advance Approver",
+    "condition": null,
+    "next_state": "Rejected for LM",
+    "parent": "Employee Advance",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Waiting for LM"
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Employee Advance Approver",
+    "condition": null,
+    "next_state": "Approved By All",
+    "parent": "Employee Advance",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Waiting for LM"
+   }
+  ],
+  "workflow_name": "Employee Advance",
+  "workflow_state_field": "workflow_state"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Expense Claim",
+  "is_active": 1,
+  "modified": "2021-09-01 01:45:50.011343",
+  "name": "Expense Claim = LM",
+  "override_status": 1,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Expense Approver",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Expense Claim = LM",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Waiting for LM",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Expense Approver",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Expense Claim = LM",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Rejected for LM",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Expense Approver",
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Expense Claim = LM",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Approved By All",
+    "update_field": null,
+    "update_value": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Expense Approver",
+    "condition": null,
+    "next_state": "Rejected for LM",
+    "parent": "Expense Claim = LM",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Waiting for LM"
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Expense Approver",
+    "condition": null,
+    "next_state": "Approved By All",
+    "parent": "Expense Claim = LM",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Waiting for LM"
+   }
+  ],
+  "workflow_name": "Expense Claim = LM",
+  "workflow_state_field": "workflow_state"
+ }
+]
