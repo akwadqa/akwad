@@ -172,3 +172,15 @@ user_data_fields = [
 		"doctype": "{doctype_4}"
 	}
 ]
+#------------------------------------------
+fixtures = [
+            "Custom Field",
+            "Client Script",
+            "Print Format",
+            "Report",
+            "Workflow",
+            "Workflow Action",
+            "Workspace",
+            "Letter Head"
+            ]
+#------------------------------------------
