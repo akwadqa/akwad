@@ -10,6 +10,383 @@
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
+  "letter_head": null,
+  "modified": "2020-12-27 11:43:42.677584",
+  "module": "Manufacturing",
+  "name": "Production Plan Summary",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Production Plan",
+  "reference_report": null,
+  "report_name": "Production Plan Summary",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Production Plan Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Manufacturing User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": "{}",
+  "letter_head": null,
+  "modified": "2021-01-11 11:11:03.594242",
+  "module": "Manufacturing",
+  "name": "Cost of Poor Quality Report",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Job Card",
+  "reference_report": null,
+  "report_name": "Cost of Poor Quality Report",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Cost of Poor Quality Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "Cost of Poor Quality Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Manufacturing User"
+   },
+   {
+    "parent": "Cost of Poor Quality Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Manufacturing Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2021-05-12 16:48:28.347575",
+  "module": "Stock",
+  "name": "Incorrect Balance Qty After Transaction",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Stock Ledger Entry",
+  "reference_report": null,
+  "report_name": "Incorrect Balance Qty After Transaction",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Incorrect Balance Qty After Transaction",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Incorrect Balance Qty After Transaction",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "Incorrect Balance Qty After Transaction",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": "{}",
+  "letter_head": null,
+  "modified": "2021-05-13 13:07:00.767845",
+  "module": "Stock",
+  "name": "Incorrect Serial No Valuation",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Stock Ledger Entry",
+  "reference_report": null,
+  "report_name": "Incorrect Serial No Valuation",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Incorrect Serial No Valuation",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Incorrect Serial No Valuation",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Incorrect Serial No Valuation",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Incorrect Serial No Valuation",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2021-05-31 14:43:32.417694",
+  "module": "Buying",
+  "name": "Subcontract Order Summary",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Purchase Order",
+  "reference_report": null,
+  "report_name": "Subcontract Order Summary",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Subcontract Order Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Subcontract Order Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Manager"
+   },
+   {
+    "parent": "Subcontract Order Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2021-06-02 18:59:55.470621",
+  "module": "Stock",
+  "name": "COGS By Item Group",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "GL Entry",
+  "reference_report": null,
+  "report_name": "COGS By Item Group",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "COGS By Item Group",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "COGS By Item Group",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "COGS By Item Group",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2021-06-22 15:35:05.148177",
+  "module": "Stock",
+  "name": "Incorrect Stock Value Report",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Stock Ledger Entry",
+  "reference_report": null,
+  "report_name": "Incorrect Stock Value Report",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Incorrect Stock Value Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Incorrect Stock Value Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2021-07-09 11:07:43.473518",
+  "module": "Regional",
+  "name": "VAT Audit Report",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "GL Entry",
+  "reference_report": null,
+  "report_name": "VAT Audit Report",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": []
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2021-08-24 16:38:15.233395",
+  "module": "Stock",
+  "name": "Process Loss Report",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Work Order",
+  "reference_report": null,
+  "report_name": "Process Loss Report",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Process Loss Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Manufacturing User"
+   },
+   {
+    "parent": "Process Loss Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
   "letter_head": "",
   "modified": "2017-06-23 04:46:43.209008",
   "module": "Manufacturing",
@@ -9034,6 +9411,52 @@
     "parentfield": "roles",
     "parenttype": "Report",
     "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": "Faanoon",
+  "modified": "2021-11-15 11:47:29.986051",
+  "module": "Akwad",
+  "name": "Project Task List",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Task",
+  "reference_report": null,
+  "report_name": "Project Task List",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Project Task List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Projects User"
+   },
+   {
+    "parent": "Project Task List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "Project Task List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Task Manager"
    }
   ]
  }

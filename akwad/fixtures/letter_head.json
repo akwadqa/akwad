@@ -1,6 +1,6 @@
 [
  {
-  "content": "<table style=\"width: 100%;\">\n<tbody>\n<tr>\n<td style=\"width: 30%; text-align: left;\"><img src=\"https://www.akwad.qa/wp-content/themes/akwad/custom/images/akwad-logo.png\" style=\"width: 150px;\"></td>\n\n<td style=\"width: 10%; text-align: left;\"></td>\n\n<td style=\"width: 60%; text-align: left; font-size: 28px;\"><b>Akwad Programming</b>\n<br>\n<p style=\"width: 70%; text-align: left; font-size: 11px;\">Al Jazira Al Arabiya St. (No. 362),\n<br> Madinat Khalifa (South),\n<br>Doha, Qatar,\n<br>Phone:+974 4431-3980,\n<br>Fax:+974 4431-3980,\n<br>Email:hello@akwad.qa\n</p></td>\n</tr>\n</tbody>\n</table>",
+  "content": "<table style=\"width: 100%;\">\n<tbody>\n<tr>\n<td style=\"width: 30%; text-align: left;\"><img src=\"https://www.akwad.qa/wp-content/themes/akwad/custom/images/akwad-logo.png\" style=\"width: 150px;\"></td>\n\n<td style=\"width: 10%; text-align: left;\"></td>\n\n<td style=\"width: 60%; text-align: left; font-size: 28px;\"><b>Akwad Programming</b>\n<br>\n<p style=\"width: 70%; text-align: left; font-size: 11px;\">Suhaim Tower, Al-Sadd,\n<br>5th Floor, Office 501,\n<br>Doha, Qatar,\n<br>Phone:+974 5083-5656,\n<br>Email:<a href=\"mailto:hello@akwad.qa\">hello@akwad.qa</a><br>\n</p></td></tr>\n</tbody>\n</table>",
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Letter Head",
@@ -8,7 +8,7 @@
   "image": null,
   "is_default": 0,
   "letter_head_name": "Akwad",
-  "modified": "2021-09-10 01:12:16.226177",
+  "modified": "2021-11-13 21:26:41.203655",
   "name": "Akwad",
   "parent": null,
   "parentfield": null,
@@ -16,7 +16,7 @@
   "source": "HTML"
  },
  {
-  "content": "<img alt=\"Akwad Logo\" height=\"58\" src=\"https://www.akwad.qa/wp-content/themes/akwad/custom/images/akwad-logo.png\">\n<br>\n<address>\n\n<strong>Akwad Programming</strong><br>\nAl Jazira Al Arabiya St. (No. 362)<br>\nMadinat Khalifa (South)<br>\nDoha, Qatar<br>\nPhone:<a>+974 4431-3980</a><br>\nFax:<a>+974 4431-3980</a><br>\nEmail:<a href=\"mailto:faanoon@faanoon.com\">hello@akwad.qa</a><br>\n</address>\n",
+  "content": "<img alt=\"Akwad Logo\" height=\"58\" src=\"https://www.akwad.qa/wp-content/themes/akwad/custom/images/akwad-logo.png\">\n<br>\n<address>\n\n<strong>Akwad Programming</strong><br>\nSuhaim Tower, Al-Sadd<br>\n5th Floor, Office 501<br>\nDoha, Qatar<br>\nPhone:<a>+974 5083-5656</a><br>\nFax:<a>+974 50835656</a><br>\nEmail:<a href=\"mailto:hello@akwad.qa\">hello@akwad.qa</a><br>\n</address>\n",
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Letter Head",
@@ -24,7 +24,7 @@
   "image": null,
   "is_default": 1,
   "letter_head_name": "Faanoon",
-  "modified": "2021-09-10 01:10:56.707960",
+  "modified": "2021-11-13 21:25:58.662241",
   "name": "Faanoon",
   "parent": null,
   "parentfield": null,
