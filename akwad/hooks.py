@@ -180,7 +180,6 @@ fixtures = [
             "Report",
             "Workflow",
             "Workflow Action",
-            "Workspace",
             "Letter Head"
             ]
 #------------------------------------------

@@ -89,3 +89,38 @@ html[data-theme='light'] .timeline-message-box .text-color .text-muted {
     font-weight: 400;
     font-size: 90%;
 }
+
+li[style*="direction: rtl;"] span:before {
+    margin-right: -1.5em !important;
+    margin-left: 0.3em !important;
+}
+
+li[style*="direction: rtl;"] {
+    padding-right: 1.5em !important;
+	padding-left: 0 !important;
+}
+
+li[style*="direction: rtl;"].ql-indent-1 {
+    padding-right: 4.5em !important;
+	padding-left: 0 !important;
+}
+
+li[style*="direction: rtl;"].ql-indent-2 {
+    padding-right: 7.5em !important;
+	padding-left: 0 !important;
+}
+
+li[style*="direction: rtl;"].ql-indent-3 {
+    padding-right: 10.5em !important;
+	padding-left: 0 !important;
+}
+
+li[style*="direction: rtl;"].ql-indent-4 {
+    padding-right: 13.5em !important;
+	padding-left: 0 !important;
+}
+
+li[style*="direction: rtl;"].ql-indent-5 {
+    padding-right: 16.5em !important;
+	padding-left: 0 !important;
+}
