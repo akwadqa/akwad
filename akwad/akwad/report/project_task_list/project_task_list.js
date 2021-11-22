@@ -9,15 +9,14 @@ frappe.query_reports["Project Task List"] = {
 		"Label":__("Status"),
 		"fieldtype": "Select",
 		"options": ["","Open","Working","Pending Review","Overview","Completed","Cancelled"],
-		"default":""
+		"default":"Open"
 	},
 	
 	{
 		"fieldname":"project",
 		"label": __("Project"),
 		"fieldtype": "Link",
-		"options":"Project",
-		"default":"Open"
+		"options":"Project"
 	},
 	
 	{

@@ -7,6 +7,7 @@ from frappe import _
 from frappe.utils import flt, getdate
 
 def execute(filters=None):
+
 	columns, data = [], []
 	columns=get_columns()
 	data=get_data(filters)
@@ -29,7 +30,9 @@ def get_columns():
 	]
 
 def get_data(filters):
+#    if filters.get("project"):
 	project=filters.get("project")
+#    if filters.get("project"): conditions += " and project = %(project)s"
 	return frappe.db.sql("""
 	select
 	A.name,
