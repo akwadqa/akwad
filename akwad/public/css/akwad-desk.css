@@ -20,7 +20,7 @@ html[data-theme='light'] .list-row-head {
 }
 
 html[data-theme='light'] .grid-heading-row {
-	background-color: #eaf2f7;
+    background-color: #eaf2f7;
 }
 
 html[data-theme='light'] .grid-heading-row, html[data-theme='light'] .grid-row {
@@ -28,14 +28,14 @@ html[data-theme='light'] .grid-heading-row, html[data-theme='light'] .grid-row {
 }
 
 html[data-theme='light'] .form-grid {
-	border: 1px solid #b7b7b7;
-	border-radius: 0px;
+    border: 1px solid #b7b7b7;
+    border-radius: 0px;
 }
 
 html[data-theme='light'] .widget {
-	box-shadow: 1px 2px 4px #f0f4f7;
-	background-color: #ebeff2;
-	border: 1px solid #d1d8dd;
+    box-shadow: 1px 2px 4px #f0f4f7;
+    background-color: #ebeff2;
+    border: 1px solid #d1d8dd;
 }
 
 html[data-theme='light'] .grid-form-heading {
@@ -43,51 +43,54 @@ html[data-theme='light'] .grid-form-heading {
 }
 
 html[data-theme='light'] .form-control:focus {
-	border: 1px solid #3870ba;
-	box-shadow: none;
+    border: 1px solid #3870ba;
+    box-shadow: none;
 }
 
 html[data-theme='light'] .form-control {
-	border: 1px solid #d1d8dd;
+    border: 1px solid #d1d8dd;
 }
 
 html[data-theme='light'] .form-grid {
-	border: 1px solid #b7b7b7;
-	border-radius: 0px;
+    border: 1px solid #b7b7b7;
+    border-radius: 0px;
 }
 
 .ql-snow .ql-editor {
-	min-height: 150px!important;
+    min-height: 150px!important;
 }
 
 .kanban-card-title {
-	white-space: normal!important;
+    white-space: normal!important;
 }
 
 html[data-theme='light'] .ql-editor.read-mode .mention {
-	--user-mention-bg-color: #e5f2fb;
-	color: #0364b9;
-	border: none;
-	font-weight: 500;
+    --user-mention-bg-color: #e5f2fb;
+    color: #0364b9;
+    border: none;
+    font-weight: 500;
 }
 
 html[data-theme='light'] .ql-editor .ql-code-block-container {
-	font-family: monospace;
-	background-color: var(--control-bg);
-	color: #2f3337;
-	margin: 5px;
-	padding: 5px 10px;
-	border-radius: 3px;
+    font-family: monospace;
+    background-color: var(--control-bg);
+    color: #2f3337;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
 }
 
 html[data-theme='light'] .timeline-message-box .text-color {
-	font-weight: 600;
-	color: #3870ba;
+    font-weight: 600;
+    color: #3870ba;
 }
 
 html[data-theme='light'] .timeline-message-box .text-color .text-muted {
-	font-weight: 400;
-	font-size: 90%;
+    font-weight: 400;
+    font-size: 90%;
+}
+.layout-side-section {
+    display: none;
 }
 
 li[style*="direction: rtl;"] span:before {
@@ -123,7 +126,4 @@ li[style*="direction: rtl;"].ql-indent-4 {
 li[style*="direction: rtl;"].ql-indent-5 {
 	padding-right: 16.5em !important;
 	padding-left: 0 !important;
-}
-.layout-side-section {
-  display: none;
 }
