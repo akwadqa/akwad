@@ -96,13 +96,11 @@ web_include_js = "/assets/akwad/js/akwad-web.js"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+#*************************************************************START*****
+doc_events = {
+    "Salary Structure Assignment": { "onload" : "akwad.hooks_call.ssa.calculate_gross_salary" }
+}
+#*************************************************************END**********
 
 # Scheduled Tasks
 # ---------------
