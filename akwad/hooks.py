@@ -177,7 +177,8 @@ fixtures = [
             "Print Format",
             "Report",
             "Workflow",
-            "Workflow Action",
+            "Workflow State",
+	    "Workflow Action Master",
             "Letter Head"
             ]
 #------------------------------------------
