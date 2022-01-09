@@ -3,26 +3,26 @@
   "docstatus": 0,
   "doctype": "Client Script",
   "dt": "Task",
-  "enabled": 0,
-  "modified": "2021-05-24 10:33:45.712548",
+  "enabled": 1,
+  "modified": "2021-12-26 23:45:07.898280",
   "name": "Task-Form",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
-  "script": "frappe.ui.form.on('Task', {\n\trefresh(frm) {\n\t\t// your code here\n\t\tif(frm.doc.priority==\"Low\") {\n\t\t    frm.doc.task_weight=10;\n\t\t}\n\t\telse if (frm.doc.priority==\"Medium\") {\n\t\t    frm.doc.task_weight=20;\n\t\t}\n\t\telse if (frm.doc.priority==\"High\") {\n\t\t    frm.doc.task_weight=30;\n\t\t}\n\t\telse {\n\t\t    frm.doc.task_weight=40;\n\t\t}\n\t}\n})",
+  "script": "frappe.ui.form.on('Task', {\n\trefresh(frm) {\n\t\t// your code here\n\t\tfrm.doc.actual_time=frm.doc.expected_time\n\n\t}\n})",
   "view": "Form"
  },
  {
   "docstatus": 0,
   "doctype": "Client Script",
   "dt": "Timesheet",
-  "enabled": 0,
-  "modified": "2021-10-30 00:18:04.137685",
+  "enabled": 1,
+  "modified": "2021-12-26 23:40:04.153727",
   "name": "Timesheet-Form",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
-  "script": "frappe.ui.form.on('Timesheet', {\nvalidate: function(frm) {\n    var x=0;\n    var y=0;\n    frappe.after_ajax(function() {\nfrappe.call({\n\"method\": \"frappe.client.get_list\",\nargs:{\ndoctype:\"Timesheet\",\nfilters: {\n\"employee\": cur_frm.doc.employee\n},\n\nfields: [\"taa_month\",\"taa_year\"]\n},\ncallback: function (data) {\n//var count=data.message.length;\nvar month=\"\\\"\" +cur_frm.doc.taa_month+\"\\\"\";\nvar year=\"\\\"\" +cur_frm.doc.taa_year+\"\\\"\";\nfor (var i = 0; i < data.message.length; i++){\nif(month==JSON.stringify(data.message[i].taa_month) && year==JSON.stringify(data.message[i].taa_year)){\n\nmsgprint('overtime for an employee already exists');\nvalidated = false;\n\n}\n}\n}\n\n\n})\n\n});\n\n    $.each(frm.doc.time_logs, function(i, d) {\n    if(d.activity_type!=\"Over Time\"){\n        d.hours=0.001;\n    }\n    if(d.activity_type==\"Over Time\"){\n        d.taa_hours_or_pallets=0;\n    }\n    \n    d.taa_payable_amount = d.taa_hours_or_pallets * d.taa_rate_per_pallet;\n    x += flt(d.taa_payable_amount);\n    y += flt(d.hours);\n    \n    });\n    frm.doc.taa_pallets_payable_amount=x;\n    frm.doc.taa_virtual_overtime_hours=y;\n    frm.doc.taa_virtual_pallet_hours=frm.doc.taa_pallets_payable_amount/frm.doc.taa_basic*240/1.5;\n    frm.doc.total_hours=frm.doc.taa_virtual_pallet_hours + frm.doc.taa_virtual_overtime_hours;\n    frm.doc.taa_overtime_payable=frm.doc.taa_virtual_overtime_hours*frm.doc.taa_basic/240*1.5;\n    frm.doc.taa_total_payable=frm.doc.taa_overtime_payable+frm.doc.taa_pallets_payable_amount;\n},\n//========================================================================================================================\n\tsetup(frm) {\n\t\t// your code here\n\t\tcur_frm.set_query(\"ind_ssa\", function(doc) {\n\t\t    return {\n\t\t        filters: {\n\t\t            \"employee\": cur_frm.doc.employee\n\t\t        }\n\t\t    };\n\t\t}\n\t\t);\n\n\t},\n\temployee(frm){\n\t\t    //this will fetch and set the most recent assignment.\n        frappe.db.get_link_options('Salary Structure Assignment', '',\n            {\n\t\t\t\temployee: cur_frm.doc.employee\n\t\t\t}\n\t\t).then(all_ssa =>{\n\t\t    frm.set_value(\"ind_ssa\", all_ssa[0].value);\n\t\t   // frm.set_value(\"taa_test\", all[0].value);\n\t\t})}\n});",
+  "script": "",
   "view": "Form"
  }
 ]

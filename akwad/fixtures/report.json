@@ -2,6 +2,196 @@
  {
   "add_total_row": 0,
   "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2021-09-20 17:43:39.518851",
+  "module": "Accounts",
+  "name": "TDS Computation Summary",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Purchase Invoice",
+  "reference_report": null,
+  "report_name": "TDS Computation Summary",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "TDS Computation Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "TDS Computation Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "TDS Computation Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "TDS Computation Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2021-09-20 12:05:50.387572",
+  "module": "Accounts",
+  "name": "TDS Payable Monthly",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Purchase Invoice",
+  "reference_report": null,
+  "report_name": "TDS Payable Monthly",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "TDS Payable Monthly",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "TDS Payable Monthly",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "TDS Payable Monthly",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "TDS Payable Monthly",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": "",
+  "modified": "2020-12-30 11:49:21.713561",
+  "module": "Manufacturing",
+  "name": "Job Card Summary",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Job Card",
+  "reference_report": null,
+  "report_name": "Job Card Summary",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Job Card Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Manufacturing User"
+   },
+   {
+    "parent": "Job Card Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Job Card Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Manufacturing Manager"
+   },
+   {
+    "parent": "Job Card Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": "{}",
+  "letter_head": "Logo",
+  "modified": "2021-03-13 12:36:48.689413",
+  "module": "Regional",
+  "name": "E-Invoice Summary",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Sales Invoice",
+  "reference_report": null,
+  "report_name": "E-Invoice Summary",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "E-Invoice Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Administrator"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
   "disable_prepared_report": 1,
   "disabled": 1,
   "docstatus": 0,
@@ -42,6 +232,40 @@
     "parentfield": "roles",
     "parenttype": "Report",
     "role": "Accounts User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2021-10-20 22:03:57.606612",
+  "module": "Manufacturing",
+  "name": "Process Loss Report",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Work Order",
+  "reference_report": null,
+  "report_name": "Process Loss Report",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Process Loss Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Manufacturing User"
    }
   ]
  },
@@ -381,46 +605,6 @@
   "report_script": null,
   "report_type": "Script Report",
   "roles": []
- },
- {
-  "add_total_row": 0,
-  "columns": [],
-  "disable_prepared_report": 0,
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Report",
-  "filters": [],
-  "is_standard": "Yes",
-  "javascript": null,
-  "json": null,
-  "letter_head": null,
-  "modified": "2021-08-24 16:38:15.233395",
-  "module": "Stock",
-  "name": "Process Loss Report",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "prepared_report": 0,
-  "query": null,
-  "ref_doctype": "Work Order",
-  "reference_report": null,
-  "report_name": "Process Loss Report",
-  "report_script": null,
-  "report_type": "Script Report",
-  "roles": [
-   {
-    "parent": "Process Loss Report",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Manufacturing User"
-   },
-   {
-    "parent": "Process Loss Report",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Stock User"
-   }
-  ]
  },
  {
   "add_total_row": 0,
@@ -1978,110 +2162,6 @@
     "parentfield": "roles",
     "parenttype": "Report",
     "role": "Accounts User"
-   }
-  ]
- },
- {
-  "add_total_row": 0,
-  "columns": [],
-  "disable_prepared_report": 0,
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Report",
-  "filters": [],
-  "is_standard": "Yes",
-  "javascript": null,
-  "json": null,
-  "letter_head": null,
-  "modified": "2018-09-21 11:25:00.551823",
-  "module": "Accounts",
-  "name": "TDS Computation Summary",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "prepared_report": 0,
-  "query": null,
-  "ref_doctype": "Purchase Invoice",
-  "reference_report": null,
-  "report_name": "TDS Computation Summary",
-  "report_script": null,
-  "report_type": "Script Report",
-  "roles": [
-   {
-    "parent": "TDS Computation Summary",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Purchase User"
-   },
-   {
-    "parent": "TDS Computation Summary",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Accounts Manager"
-   },
-   {
-    "parent": "TDS Computation Summary",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Accounts User"
-   },
-   {
-    "parent": "TDS Computation Summary",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Auditor"
-   }
-  ]
- },
- {
-  "add_total_row": 1,
-  "columns": [],
-  "disable_prepared_report": 0,
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Report",
-  "filters": [],
-  "is_standard": "Yes",
-  "javascript": null,
-  "json": null,
-  "letter_head": null,
-  "modified": "2019-09-24 13:46:16.473711",
-  "module": "Accounts",
-  "name": "TDS Payable Monthly",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "prepared_report": 0,
-  "query": null,
-  "ref_doctype": "Purchase Invoice",
-  "reference_report": null,
-  "report_name": "TDS Payable Monthly",
-  "report_script": null,
-  "report_type": "Script Report",
-  "roles": [
-   {
-    "parent": "TDS Payable Monthly",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Purchase User"
-   },
-   {
-    "parent": "TDS Payable Monthly",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Accounts Manager"
-   },
-   {
-    "parent": "TDS Payable Monthly",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Accounts User"
-   },
-   {
-    "parent": "TDS Payable Monthly",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Auditor"
    }
   ]
  },
@@ -4129,58 +4209,6 @@
   ]
  },
  {
-  "add_total_row": 0,
-  "columns": [],
-  "disable_prepared_report": 0,
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Report",
-  "filters": [],
-  "is_standard": "Yes",
-  "javascript": null,
-  "json": null,
-  "letter_head": "Gadgets International",
-  "modified": "2020-04-20 12:00:21.436619",
-  "module": "Manufacturing",
-  "name": "Job Card Summary",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "prepared_report": 0,
-  "query": null,
-  "ref_doctype": "Job Card",
-  "reference_report": null,
-  "report_name": "Job Card Summary",
-  "report_script": null,
-  "report_type": "Script Report",
-  "roles": [
-   {
-    "parent": "Job Card Summary",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Manufacturing User"
-   },
-   {
-    "parent": "Job Card Summary",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Stock User"
-   },
-   {
-    "parent": "Job Card Summary",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Manufacturing Manager"
-   },
-   {
-    "parent": "Job Card Summary",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Stock Manager"
-   }
-  ]
- },
- {
   "add_total_row": 1,
   "columns": [],
   "disable_prepared_report": 0,
@@ -5314,40 +5342,6 @@
     "parentfield": "roles",
     "parenttype": "Report",
     "role": "Loan Manager"
-   }
-  ]
- },
- {
-  "add_total_row": 0,
-  "columns": [],
-  "disable_prepared_report": 0,
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Report",
-  "filters": [],
-  "is_standard": "Yes",
-  "javascript": null,
-  "json": "{}",
-  "letter_head": "Logo",
-  "modified": "2021-03-12 12:36:48.689413",
-  "module": "Regional",
-  "name": "E-Invoice Summary",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "prepared_report": 0,
-  "query": null,
-  "ref_doctype": "Sales Invoice",
-  "reference_report": null,
-  "report_name": "E-Invoice Summary",
-  "report_script": null,
-  "report_type": "Script Report",
-  "roles": [
-   {
-    "parent": "E-Invoice Summary",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Administrator"
    }
   ]
  },
@@ -6538,40 +6532,6 @@
   "javascript": null,
   "json": null,
   "letter_head": null,
-  "modified": "2017-02-24 19:59:18.641284",
-  "module": "HR",
-  "name": "Vehicle Expenses",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "prepared_report": 0,
-  "query": null,
-  "ref_doctype": "Vehicle",
-  "reference_report": null,
-  "report_name": "Vehicle Expenses",
-  "report_script": null,
-  "report_type": "Script Report",
-  "roles": [
-   {
-    "parent": "Vehicle Expenses",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Fleet Manager"
-   }
-  ]
- },
- {
-  "add_total_row": 0,
-  "columns": [],
-  "disable_prepared_report": 0,
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Report",
-  "filters": [],
-  "is_standard": "Yes",
-  "javascript": null,
-  "json": null,
-  "letter_head": null,
   "modified": "2020-06-24 17:16:59.823709",
   "module": "Education",
   "name": "Student Batch-Wise Attendance",
@@ -6635,7 +6595,7 @@
   ]
  },
  {
-  "add_total_row": 0,
+  "add_total_row": 1,
   "columns": [],
   "disable_prepared_report": 0,
   "disabled": 0,
@@ -6646,7 +6606,7 @@
   "javascript": null,
   "json": null,
   "letter_head": null,
-  "modified": "2017-02-24 19:59:29.747039",
+  "modified": "2021-12-06 11:53:34.085309",
   "module": "Accounts",
   "name": "Unpaid Expense Claim",
   "parent": null,
@@ -6947,46 +6907,6 @@
     "parentfield": "roles",
     "parenttype": "Report",
     "role": "System Manager"
-   }
-  ]
- },
- {
-  "add_total_row": 0,
-  "columns": [],
-  "disable_prepared_report": 0,
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Report",
-  "filters": [],
-  "is_standard": "Yes",
-  "javascript": null,
-  "json": null,
-  "letter_head": null,
-  "modified": "2020-08-13 11:26:39.112352",
-  "module": "Accounts",
-  "name": "Gross Profit",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "prepared_report": 0,
-  "query": null,
-  "ref_doctype": "Sales Invoice",
-  "reference_report": null,
-  "report_name": "Gross Profit",
-  "report_script": null,
-  "report_type": "Script Report",
-  "roles": [
-   {
-    "parent": "Gross Profit",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Accounts Manager"
-   },
-   {
-    "parent": "Gross Profit",
-    "parentfield": "roles",
-    "parenttype": "Report",
-    "role": "Accounts User"
    }
   ]
  },
@@ -9549,6 +9469,80 @@
     "parentfield": "roles",
     "parenttype": "Report",
     "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2021-05-16 22:48:22.767535",
+  "module": "HR",
+  "name": "Vehicle Expenses",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Vehicle",
+  "reference_report": null,
+  "report_name": "Vehicle Expenses",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Vehicle Expenses",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Fleet Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2021-11-13 19:14:23.730198",
+  "module": "Accounts",
+  "name": "Gross Profit",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Sales Invoice",
+  "reference_report": null,
+  "report_name": "Gross Profit",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Gross Profit",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Gross Profit",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
    }
   ]
  }
