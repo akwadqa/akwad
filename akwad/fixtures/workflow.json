@@ -4,7 +4,7 @@
   "doctype": "Workflow",
   "document_type": "Employee Advance",
   "is_active": 1,
-  "modified": "2021-12-06 11:15:46.833919",
+  "modified": "2022-01-12 12:52:09.769793",
   "name": "Employee Advance",
   "override_status": 0,
   "parent": null,
@@ -27,7 +27,7 @@
    },
    {
     "allow_edit": "Employee Advance Approver",
-    "doc_status": "1",
+    "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
     "next_action_email_template": null,
@@ -35,6 +35,19 @@
     "parentfield": "states",
     "parenttype": "Workflow",
     "state": "Waiting for LM",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Employee Advance Approver",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Employee Advance",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Rejected for LM",
     "update_field": null,
     "update_value": null
    },
@@ -48,19 +61,6 @@
     "parentfield": "states",
     "parenttype": "Workflow",
     "state": "Approved By All",
-    "update_field": null,
-    "update_value": null
-   },
-   {
-    "allow_edit": "Employee Advance Approver",
-    "doc_status": "2",
-    "is_optional_state": 0,
-    "message": null,
-    "next_action_email_template": null,
-    "parent": "Employee Advance",
-    "parentfield": "states",
-    "parenttype": "Workflow",
-    "state": "Rejected for LM",
     "update_field": null,
     "update_value": null
    }
@@ -108,7 +108,7 @@
   "doctype": "Workflow",
   "document_type": "Expense Claim",
   "is_active": 1,
-  "modified": "2021-12-23 13:33:50.675325",
+  "modified": "2022-01-12 12:51:15.356759",
   "name": "Expense Claim = LM",
   "override_status": 1,
   "parent": null,
@@ -144,14 +144,14 @@
    },
    {
     "allow_edit": "Expense Approver",
-    "doc_status": "1",
+    "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
     "next_action_email_template": null,
     "parent": "Expense Claim = LM",
     "parentfield": "states",
     "parenttype": "Workflow",
-    "state": "Approved By All",
+    "state": "Rejected for LM",
     "update_field": null,
     "update_value": null
    },
@@ -164,7 +164,7 @@
     "parent": "Expense Claim = LM",
     "parentfield": "states",
     "parenttype": "Workflow",
-    "state": "Rejected for LM",
+    "state": "Approved By All",
     "update_field": null,
     "update_value": null
    }
