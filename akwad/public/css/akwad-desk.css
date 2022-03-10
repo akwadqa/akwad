@@ -127,3 +127,17 @@ li[style*="direction: rtl;"].ql-indent-5 {
 	padding-right: 16.5em !important;
 	padding-left: 0 !important;
 }
+
+.ql-editor li[data-list="checked"] {
+    text-decoration: line-through;
+}
+
+.ql-editor li[data-list="unchecked"], .ql-editor li[data-list="checked"] {
+ line-height: 2em;
+}
+
+.ql-editor li[data-list=checked]>.ql-ui:before, .ql-editor li[data-list=unchecked]>.ql-ui:before {
+ font-size: 2em;
+ line-height: 1;
+ text-align: center;
+}
