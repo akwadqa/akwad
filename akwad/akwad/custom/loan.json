@@ -145,14 +145,14 @@
    "_comments": null,
    "_liked_by": null,
    "_user_tags": null,
-   "creation": "2022-01-09 14:04:59.958588",
+   "creation": "2022-03-11 03:53:16.242132",
    "default_value": null,
    "doc_type": "Loan",
    "docstatus": 0,
    "doctype_or_field": "DocType",
    "field_name": null,
    "idx": 0,
-   "modified": "2022-01-09 14:04:59.958588",
+   "modified": "2022-03-11 03:53:16.242132",
    "modified_by": "santosh@akwad.qa",
    "name": "Loan-main-autoname",
    "owner": "santosh@akwad.qa",
@@ -162,7 +162,7 @@
    "property": "autoname",
    "property_type": "Data",
    "row_name": null,
-   "value": "LOAN.YY.#####"
+   "value": "LOAN.YY.-.#####"
   }
  ],
  "sync_on_migrate": 1
