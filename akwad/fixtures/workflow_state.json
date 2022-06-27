@@ -82,5 +82,17 @@
   "parenttype": null,
   "style": "Info",
   "workflow_state_name": "Submit for Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2022-05-27 14:38:24.231251",
+  "name": "Initial Review",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "style": "Info",
+  "workflow_state_name": "Initial Review"
  }
 ]

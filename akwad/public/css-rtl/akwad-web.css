@@ -18,3 +18,7 @@
 .form-control {
     border: 1px solid #d1d8dd !important;
 }
+
+.footer-powered {
+    display: none !important;
+}

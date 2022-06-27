@@ -38,5 +38,15 @@
   "parentfield": null,
   "parenttype": null,
   "workflow_action_name": "Submit for Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2022-05-27 14:33:59.220470",
+  "name": "Initial Review",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "workflow_action_name": "Initial Review"
  }
 ]

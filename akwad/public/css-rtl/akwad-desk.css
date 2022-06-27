@@ -145,3 +145,20 @@ li[style*="direction: rtl;"].ql-indent-5 {
 .link-btn {
     transform: rotateY(180deg);
 }
+
+.ql-editor a:not(.mention a) {
+    color: #9c27b0;
+}
+
+.ql-editor ol li {
+    padding-bottom: 10px;
+}
+
+.ql-editor h1, .ql-editor h2, .ql-editor h3, .ql-editor h4, .ql-editor h5 {
+	margin-top: 0.8em !important;
+	margin-bottom: 0.5em !important;
+}
+
+.ql-editor ol li:first-child {
+	padding-top: 10px !important;
+}

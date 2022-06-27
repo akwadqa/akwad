@@ -173,6 +173,31 @@
   }
  ],
  "doctype": "File",
- "property_setters": [],
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2022-05-23 12:21:00.750753",
+   "default_value": null,
+   "doc_type": "File",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "is_private",
+   "idx": 0,
+   "modified": "2022-05-23 12:21:00.750753",
+   "modified_by": "santosh@akwad.qa",
+   "name": "File-is_private-in_list_view",
+   "owner": "santosh@akwad.qa",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "in_list_view",
+   "property_type": "Check",
+   "row_name": null,
+   "value": "1"
+  }
+ ],
  "sync_on_migrate": 1
 }
