@@ -26,7 +26,7 @@
    "parenttype": "DocType",
    "permlevel": 0,
    "print": 0,
-   "read": 0,
+   "read": 1,
    "report": 0,
    "role": "Sales User",
    "select": 1,
