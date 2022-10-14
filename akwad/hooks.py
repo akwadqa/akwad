@@ -11,21 +11,16 @@ app_color = "grey"
 app_email = "admin@akwad.qa"
 app_license = "MIT"
 
-website_context = {
-	"favicon": 	"/assets/akwad/images/akwad-logo-symbol.svg",
-	"splash_image": "/assets/akwad/images/akwad-logo-symbol.svg"
-}
-
 # Includes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/akwad/css/akwad-desk.css"
+# app_include_css = "/assets/akwad/css/akwad-desk.css"
 # app_include_js = "/assets/akwad/js/desk.js"
 
 # include js, css files in header of web template
-web_include_css = "/assets/akwad/css/akwad-web.css"
-web_include_js = "/assets/akwad/js/akwad-web.js"
+# web_include_css = "/assets/akwad/css/akwad-web.css"
+# web_include_js = "/assets/akwad/js/akwad-web.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "akwad/public/scss/website"
