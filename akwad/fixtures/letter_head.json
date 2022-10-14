@@ -14,21 +14,5 @@
   "parentfield": null,
   "parenttype": null,
   "source": "HTML"
- },
- {
-  "content": "<img alt=\"Akwad Logo\" height=\"58\" src=\"https://www.akwad.qa/wp-content/themes/akwad/custom/images/akwad-logo.png\">\n<br>\n<address>\n\n<strong>Akwad Programming</strong><br>\nSuhaim Tower, Al-Sadd<br>\n5th Floor, Office 501<br>\nDoha, Qatar<br>\nPhone:<a>+974 5083-5656</a><br>\nFax:<a>+974 50835656</a><br>\nEmail:<a href=\"mailto:hello@akwad.qa\">hello@akwad.qa</a><br>\n</address>\n",
-  "disabled": 0,
-  "docstatus": 0,
-  "doctype": "Letter Head",
-  "footer": "<center>\nAkwad Programming - Tel/Fax: +974 44313980 - email: hello@akwad.qa - C.R. No. 128423</center>",
-  "image": null,
-  "is_default": 0,
-  "letter_head_name": "Faanoon",
-  "modified": "2021-11-13 21:25:58.662241",
-  "name": "Faanoon",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "source": "Image"
  }
 ]
