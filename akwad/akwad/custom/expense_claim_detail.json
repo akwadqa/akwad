@@ -2,6 +2,7 @@
  "custom_fields": [],
  "custom_perms": [],
  "doctype": "Expense Claim Detail",
+ "links": [],
  "property_setters": [
   {
    "_assign": null,
@@ -15,8 +16,10 @@
    "doctype_or_field": "DocField",
    "field_name": "expense_type",
    "idx": 0,
+   "is_system_generated": 0,
    "modified": "2021-12-23 11:24:23.296098",
    "modified_by": "santosh@akwad.qa",
+   "module": null,
    "name": "Expense Claim Detail-expense_type-in_standard_filter",
    "owner": "santosh@akwad.qa",
    "parent": null,
