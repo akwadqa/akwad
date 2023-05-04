@@ -5,9 +5,6 @@
   "icon": "question-sign",
   "modified": "2020-05-23 08:53:27.936178",
   "name": "Pending",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "style": "",
   "workflow_state_name": "Pending"
  },
@@ -17,9 +14,6 @@
   "icon": "ok-sign",
   "modified": "2020-05-23 08:53:27.940709",
   "name": "Approved",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "style": "Success",
   "workflow_state_name": "Approved"
  },
@@ -29,9 +23,6 @@
   "icon": "remove",
   "modified": "2020-05-23 08:53:27.945024",
   "name": "Rejected",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "style": "Danger",
   "workflow_state_name": "Rejected"
  },
@@ -41,9 +32,6 @@
   "icon": "",
   "modified": "2021-08-31 11:46:55.854948",
   "name": "Waiting for LM",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "style": "Primary",
   "workflow_state_name": "Waiting for LM"
  },
@@ -53,9 +41,6 @@
   "icon": "",
   "modified": "2021-08-31 11:47:31.615489",
   "name": "Approved By All",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "style": "Success",
   "workflow_state_name": "Approved By All"
  },
@@ -65,9 +50,6 @@
   "icon": "",
   "modified": "2021-08-31 11:51:00.097309",
   "name": "Rejected for LM",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "style": "Danger",
   "workflow_state_name": "Rejected for LM"
  },
@@ -77,9 +59,6 @@
   "icon": "",
   "modified": "2021-11-20 14:39:57.732735",
   "name": "Submit for Approval",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "style": "Info",
   "workflow_state_name": "Submit for Approval"
  },
@@ -89,10 +68,106 @@
   "icon": "",
   "modified": "2022-05-27 14:38:24.231251",
   "name": "Initial Review",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "style": "Info",
   "workflow_state_name": "Initial Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-04-30 18:04:48.288085",
+  "name": "Waiting For MD",
+  "style": "Primary",
+  "workflow_state_name": "Waiting For MD"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-04-30 18:04:41.763112",
+  "name": "Waiting For Owner",
+  "style": "Primary",
+  "workflow_state_name": "Waiting For Owner"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-04-30 18:06:52.946375",
+  "name": "Waiting For TM",
+  "style": "Danger",
+  "workflow_state_name": "Waiting For TM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-04-30 18:07:09.514783",
+  "name": "Waiting For Frontend",
+  "style": "Warning",
+  "workflow_state_name": "Waiting For Frontend"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-04-30 18:07:22.783462",
+  "name": "Waiting For Backend",
+  "style": "Warning",
+  "workflow_state_name": "Waiting For Backend"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-04-30 18:07:34.098337",
+  "name": "Pending Review",
+  "style": "Danger",
+  "workflow_state_name": "Pending Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-04-30 18:09:14.010955",
+  "name": "Completed",
+  "style": "Success",
+  "workflow_state_name": "Completed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-04-30 18:11:04.015810",
+  "name": "Cancelled",
+  "style": "Inverse",
+  "workflow_state_name": "Cancelled"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-05-04 02:21:39.941442",
+  "name": "Waiting for Testing",
+  "style": "",
+  "workflow_state_name": "Waiting for Testing"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-05-04 02:50:59.709901",
+  "name": "Open",
+  "style": "",
+  "workflow_state_name": "Open"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-05-04 02:51:05.952564",
+  "name": "Working",
+  "style": "",
+  "workflow_state_name": "Working"
  }
 ]

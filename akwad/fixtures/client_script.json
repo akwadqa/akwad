@@ -1,0 +1,24 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Task",
+  "enabled": 1,
+  "modified": "2023-02-13 11:43:59.852995",
+  "module": "Akwad",
+  "name": "Task-Form",
+  "script": "frappe.ui.form.on('Task', {\n\tvalidate(frm) {\n\t\t// your code here\n\t\tfrm.doc.actual_time=frm.doc.expected_time\n\t\tif(frm.doc.status==\"Completed\" || frm.doc.status==\"Cancelled\"){\n\t\t    frm.doc.akd_is_active=0;\n\t\t}\n\t\telse {\n\t\t    frm.doc.akd_is_active=1;\n\t\t}\n\t},\n\trefresh(frm) {\n\t    document.querySelector(\"#page-Task div[data-fieldtype='Text Editor'] .ql-editor\").style.height = \"620px\";\n\t    document.querySelector(\"#page-Task div[data-fieldname='akd_test_rsults'] .ql-editor\").style.height = \"620px\";\n\t}\n})",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Timesheet",
+  "enabled": 1,
+  "modified": "2021-12-26 23:40:04.153727",
+  "module": null,
+  "name": "Timesheet-Form",
+  "script": "",
+  "view": "Form"
+ }
+]
