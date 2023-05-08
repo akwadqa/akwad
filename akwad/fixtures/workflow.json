@@ -318,7 +318,7 @@
   "doctype": "Workflow",
   "document_type": "Task",
   "is_active": 1,
-  "modified": "2023-05-08 13:16:04.165013",
+  "modified": "2023-05-08 15:13:13.715204",
   "name": "TASK - Management",
   "override_status": 1,
   "send_email_alert": 0,
@@ -372,8 +372,8 @@
     "parentfield": "states",
     "parenttype": "Workflow",
     "state": "Waiting For MD",
-    "update_field": null,
-    "update_value": null
+    "update_field": "status",
+    "update_value": "Open"
    },
    {
     "allow_edit": "All",
@@ -385,8 +385,8 @@
     "parentfield": "states",
     "parenttype": "Workflow",
     "state": "Waiting For TM",
-    "update_field": null,
-    "update_value": null
+    "update_field": "status",
+    "update_value": "Open"
    },
    {
     "allow_edit": "All",
@@ -398,8 +398,8 @@
     "parentfield": "states",
     "parenttype": "Workflow",
     "state": "Waiting For Frontend",
-    "update_field": null,
-    "update_value": null
+    "update_field": "status",
+    "update_value": "Open"
    },
    {
     "allow_edit": "All",
@@ -411,8 +411,8 @@
     "parentfield": "states",
     "parenttype": "Workflow",
     "state": "Waiting For Backend",
-    "update_field": null,
-    "update_value": null
+    "update_field": "status",
+    "update_value": "Open"
    },
    {
     "allow_edit": "All",
