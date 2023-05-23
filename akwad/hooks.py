@@ -96,7 +96,9 @@ doc_events = {
     "Salary Structure Assignment": { "onload" : "akwad.hooks_call.ssa.calculate_gross_salary" }
 }
 #*************************************************************END**********
-
+doctype_js = {
+	"Task" : "client_scripts/task.js"
+}
 # Scheduled Tasks
 # ---------------
 
