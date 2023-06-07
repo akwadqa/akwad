@@ -318,9 +318,9 @@
   "doctype": "Workflow",
   "document_type": "Task",
   "is_active": 1,
-  "modified": "2023-05-20 14:23:28.493565",
+  "modified": "2023-05-27 20:45:39.696476",
   "name": "TASK - Management",
-  "override_status": 1,
+  "override_status": 0,
   "send_email_alert": 0,
   "states": [
    {

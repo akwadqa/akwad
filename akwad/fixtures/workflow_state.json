@@ -84,18 +84,18 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2023-04-30 18:04:41.763112",
+  "modified": "2023-05-27 20:49:25.278952",
   "name": "Waiting For Owner",
-  "style": "Primary",
+  "style": "Info",
   "workflow_state_name": "Waiting For Owner"
  },
  {
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2023-04-30 18:06:52.946375",
+  "modified": "2023-05-27 20:46:45.484560",
   "name": "Waiting For TM",
-  "style": "Danger",
+  "style": "Warning",
   "workflow_state_name": "Waiting For TM"
  },
  {
@@ -138,27 +138,27 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2023-04-30 18:11:04.015810",
+  "modified": "2023-05-27 20:50:16.528613",
   "name": "Cancelled",
-  "style": "Inverse",
+  "style": "Danger",
   "workflow_state_name": "Cancelled"
  },
  {
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2023-05-04 02:21:39.941442",
+  "modified": "2023-05-27 20:46:18.358000",
   "name": "Waiting for Testing",
-  "style": "",
+  "style": "Warning",
   "workflow_state_name": "Waiting for Testing"
  },
  {
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2023-05-04 02:50:59.709901",
+  "modified": "2023-05-28 00:35:46.478928",
   "name": "Open",
-  "style": "",
+  "style": "Info",
   "workflow_state_name": "Open"
  },
  {
