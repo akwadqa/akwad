@@ -2,6 +2,15 @@
  {
   "docstatus": 0,
   "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2023-08-01 15:25:45.518565",
+  "name": "Overdue",
+  "style": "",
+  "workflow_state_name": "Overdue"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
   "icon": "question-sign",
   "modified": "2020-05-23 08:53:27.936178",
   "name": "Pending",

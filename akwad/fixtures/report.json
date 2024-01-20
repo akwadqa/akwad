@@ -1,5 +1,60 @@
 [
  {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2023-03-30 18:50:42.394262",
+  "module": "HR",
+  "name": "Appraisal Overview",
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Appraisal",
+  "reference_report": "",
+  "report_name": "Appraisal Overview",
+  "report_script": "",
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Appraisal Overview",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Employee"
+   },
+   {
+    "parent": "Appraisal Overview",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "Appraisal Overview",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "HR User"
+   },
+   {
+    "parent": "Appraisal Overview",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Employee Self Service"
+   },
+   {
+    "parent": "Appraisal Overview",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "HR Manager"
+   }
+  ]
+ },
+ {
   "add_total_row": 1,
   "columns": [],
   "disable_prepared_report": 0,
@@ -5031,7 +5086,7 @@
   "query": null,
   "ref_doctype": "Project",
   "reference_report": null,
-  "report_name": "Project wise Stock Tracking ",
+  "report_name": "Project wise Stock Tracking",
   "report_script": null,
   "report_type": "Script Report",
   "roles": [
