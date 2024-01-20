@@ -170,7 +170,6 @@ user_data_fields = [
 #------------------------------------------
 fixtures = [
 	{"dt" : "Custom Field", "filters" : [["module","in", "Akwad"]]},
-            "Client Script",
             "Print Format",
             "Report",
             "Workflow",
