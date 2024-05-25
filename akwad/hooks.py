@@ -91,11 +91,6 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-#*************************************************************START*****
-doc_events = {
-    "Salary Structure Assignment": { "onload" : "akwad.hooks_call.ssa.calculate_gross_salary" }
-}
-#*************************************************************END**********
 # Scheduled Tasks
 # ---------------
 
@@ -167,6 +162,6 @@ user_data_fields = [
 #------------------------------------------
 fixtures = [
 	{"dt" : "Custom Field", "filters" : [["module","in", "Akwad"]]},
-	"Property Setter"
-            ]
+	{"dt" : "Property Setter", "filters" : [["module","in", "Akwad"]]}
+]
 #------------------------------------------
