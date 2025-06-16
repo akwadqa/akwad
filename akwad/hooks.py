@@ -8,7 +8,7 @@ app_publisher = "Akwad"
 app_description = "Customization and Changes for Akwad ERP"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
-app_email = "admin@akwad.qa"
+app_email = "support@akwad.qa"
 app_license = "MIT"
 
 # Includes in <head>
@@ -160,8 +160,8 @@ user_data_fields = [
 	}
 ]
 #------------------------------------------
-fixtures = [
-	{"dt" : "Custom Field", "filters" : [["module","in", "Akwad"]]},
-	{"dt" : "Property Setter", "filters" : [["module","in", "Akwad"]]}
-]
+# fixtures = [
+# 	{"dt" : "Custom Field", "filters" : [["module","in", "Akwad"]]},
+# 	{"dt" : "Property Setter", "filters" : [["module","in", "Akwad"]]}
+# ]
 #------------------------------------------
