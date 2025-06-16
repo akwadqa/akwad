@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "creation": "2025-03-22 02:58:39.745425",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_name",
+  "column_break_3",
+  "user",
+  "begin_on",
+  "duration",
+  "task",
+  "task_weight",
+  "required_for_employee_creation",
+  "section_break_6",
+  "description"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "columns": 3,
+   "fieldname": "activity_name",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Activity Name",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "begin_on",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Begin On (Days)"
+  },
+  {
+   "columns": 2,
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Duration (Days)"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "label": "Task",
+   "no_copy": 1,
+   "options": "Task",
+   "read_only": 1
+  },
+  {
+   "fieldname": "task_weight",
+   "fieldtype": "Float",
+   "label": "Task Weight"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:['Employee Onboarding', 'Employee Onboarding Template'].includes(doc.parenttype)",
+   "description": "Applicable in the case of Employee Onboarding",
+   "fieldname": "required_for_employee_creation",
+   "fieldtype": "Check",
+   "label": "Required for Employee Creation"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-23 16:53:30.177213",
+ "modified_by": "Administrator",
+ "module": "Akwad",
+ "name": "Meeting Activity Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
