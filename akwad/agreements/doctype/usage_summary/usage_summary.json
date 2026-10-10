@@ -1,0 +1,357 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "format:USM-{agreement}-{period_month}",
+ "creation": "2026-09-29 11:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_summary",
+  "agreement",
+  "customer",
+  "period_month",
+  "period_start",
+  "period_end",
+  "generated_on",
+  "sb_support",
+  "support_hours_allowed",
+  "support_hours_used",
+  "support_hours_remaining",
+  "support_hours_excess",
+  "cb_1",
+  "support_hours_allowed_term",
+  "support_hours_used_term",
+  "support_hours_remaining_term",
+  "sb_visits",
+  "visits_allowed",
+  "visits_used",
+  "visits_excess",
+  "cb_2",
+  "visit_hours",
+  "visit_hours_term_to_date",
+  "sb_tickets",
+  "tickets_opened",
+  "tickets_resolved",
+  "tickets_outstanding",
+  "tab_effort",
+  "effort_lines",
+  "effort_hours_total",
+  "effort_hours_out_of_coverage",
+  "tab_hosting_and_margin",
+  "sb_hosting",
+  "storage_allowed_gb",
+  "storage_used_gb",
+  "storage_peak_gb",
+  "cb_3",
+  "bandwidth_allowed_gb",
+  "bandwidth_used_gb",
+  "sb_margin",
+  "effort_cost",
+  "cb_4",
+  "hosting_cost",
+  "margin"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_summary",
+   "fieldtype": "Tab Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "agreement",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Agreement",
+   "options": "Service Agreement",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "description": "YYYY-MM",
+   "fieldname": "period_month",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Period Month",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "period_start",
+   "fieldtype": "Date",
+   "label": "Period Start",
+   "read_only": 1
+  },
+  {
+   "fieldname": "period_end",
+   "fieldtype": "Date",
+   "label": "Period End",
+   "read_only": 1
+  },
+  {
+   "fieldname": "generated_on",
+   "fieldtype": "Datetime",
+   "label": "Generated On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_support",
+   "fieldtype": "Section Break",
+   "label": "Support"
+  },
+  {
+   "description": "Monthly basis",
+   "fieldname": "support_hours_allowed",
+   "fieldtype": "Float",
+   "label": "Support Hours Allowed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "support_hours_used",
+   "fieldtype": "Float",
+   "label": "Support Hours Used",
+   "read_only": 1
+  },
+  {
+   "fieldname": "support_hours_remaining",
+   "fieldtype": "Float",
+   "label": "Support Hours Remaining",
+   "read_only": 1
+  },
+  {
+   "fieldname": "support_hours_excess",
+   "fieldtype": "Float",
+   "label": "Support Hours Excess",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Full-term basis",
+   "fieldname": "support_hours_allowed_term",
+   "fieldtype": "Float",
+   "label": "Support Hours Allowed Term",
+   "read_only": 1
+  },
+  {
+   "fieldname": "support_hours_used_term",
+   "fieldtype": "Float",
+   "label": "Support Hours Used Term",
+   "read_only": 1
+  },
+  {
+   "fieldname": "support_hours_remaining_term",
+   "fieldtype": "Float",
+   "label": "Support Hours Remaining Term",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_visits",
+   "fieldtype": "Section Break",
+   "label": "Visits"
+  },
+  {
+   "fieldname": "visits_allowed",
+   "fieldtype": "Int",
+   "label": "Visits Allowed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "visits_used",
+   "fieldtype": "Int",
+   "label": "Visits Used",
+   "read_only": 1
+  },
+  {
+   "fieldname": "visits_excess",
+   "fieldtype": "Int",
+   "label": "Visits Excess",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "visit_hours",
+   "fieldtype": "Float",
+   "label": "Visit Hours",
+   "read_only": 1
+  },
+  {
+   "description": "Compared with the annual visit hours cap",
+   "fieldname": "visit_hours_term_to_date",
+   "fieldtype": "Float",
+   "label": "Visit Hours Term To Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_tickets",
+   "fieldtype": "Section Break",
+   "label": "Tickets"
+  },
+  {
+   "fieldname": "tickets_opened",
+   "fieldtype": "Int",
+   "label": "Tickets Opened",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tickets_resolved",
+   "fieldtype": "Int",
+   "label": "Tickets Resolved",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tickets_outstanding",
+   "fieldtype": "Int",
+   "label": "Tickets Outstanding",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tab_effort",
+   "fieldtype": "Tab Break",
+   "label": "Effort"
+  },
+  {
+   "fieldname": "effort_lines",
+   "fieldtype": "Table",
+   "label": "Effort Lines",
+   "options": "Usage Effort Line",
+   "read_only": 1
+  },
+  {
+   "fieldname": "effort_hours_total",
+   "fieldtype": "Float",
+   "label": "Effort Hours Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "effort_hours_out_of_coverage",
+   "fieldtype": "Float",
+   "label": "Effort Hours Out Of Coverage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tab_hosting_and_margin",
+   "fieldtype": "Tab Break",
+   "label": "Hosting and Margin"
+  },
+  {
+   "fieldname": "sb_hosting",
+   "fieldtype": "Section Break",
+   "label": "Hosting"
+  },
+  {
+   "fieldname": "storage_allowed_gb",
+   "fieldtype": "Float",
+   "label": "Storage Allowed (GB)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "storage_used_gb",
+   "fieldtype": "Float",
+   "label": "Storage Used (GB)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "storage_peak_gb",
+   "fieldtype": "Float",
+   "label": "Storage Peak (GB)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bandwidth_allowed_gb",
+   "fieldtype": "Float",
+   "label": "Bandwidth Allowed (GB)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bandwidth_used_gb",
+   "fieldtype": "Float",
+   "label": "Bandwidth Used (GB)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_margin",
+   "fieldtype": "Section Break",
+   "label": "Effort Margin & Technical Cost"
+  },
+  {
+   "description": "Technical cost: employee time on this agreement, at costing rate. Not tied to any contract value yet.",
+   "fieldname": "effort_cost",
+   "fieldtype": "Currency",
+   "label": "Effort Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Technical cost: actual hosting spend logged for the period.",
+   "fieldname": "hosting_cost",
+   "fieldtype": "Currency",
+   "label": "Hosting Cost",
+   "read_only": 1
+  },
+  {
+   "description": "Support Hours Allowed minus all effort hours (covered and out-of-coverage). Negative means total technical effort ran over the support allowance.",
+   "fieldname": "margin",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Effort Margin (Hrs)",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-09-29 11:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agreements",
+ "name": "Usage Summary",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Manager"
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Delivery"
+  }
+ ],
+ "search_fields": "agreement,period_month",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

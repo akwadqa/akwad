@@ -1,0 +1,29 @@
+{
+ "channel": "Email",
+ "condition": "doc.status in ('Active', 'Expiring Soon') and not frappe.db.exists('Renewal', {'agreement': doc.name, 'docstatus': 0})",
+ "condition_type": "Python",
+ "creation": "2026-09-29 09:00:00.000000",
+ "date_changed": "end_date",
+ "days_in_advance": 90,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Service Agreement",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>This agreement is due for a renewal review.</p><p>Customer: <b>{{ doc.customer }}</b><br>Agreement: <b>{{ doc.name }}</b> ({{ doc.agreement_type }})<br>Ends on: <b>{{ frappe.format(doc.end_date, {\"fieldtype\": \"Date\"}) }}</b></p><p><a href=\"{{ frappe.utils.get_url() }}/app/renewal/new?agreement={{ doc.name }}&due_date={{ frappe.utils.add_days(doc.end_date, -90) }}&follow_up_by={{ doc.account_owner }}\">Start the Renewal</a></p>",
+ "message_type": "HTML",
+ "modified": "2026-09-30 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agreements",
+ "name": "Renewal Review Due",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "account_owner"
+  }
+ ],
+ "send_system_notification": 1,
+ "subject": "Renewal review due: {{ doc.name }} - {{ doc.customer }}"
+}

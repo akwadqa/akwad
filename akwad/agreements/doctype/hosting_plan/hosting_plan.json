@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "autoname": "field:plan_name",
+ "creation": "2026-10-05 15:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_name",
+  "disabled",
+  "description",
+  "sb_hosting_allowance",
+  "storage_gb",
+  "cb_1",
+  "bandwidth_gb",
+  "backup_storage_gb"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plan Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "sb_hosting_allowance",
+   "fieldtype": "Section Break",
+   "label": "Managed Hosting"
+  },
+  {
+   "fieldname": "storage_gb",
+   "fieldtype": "Float",
+   "label": "Storage (GB)"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bandwidth_gb",
+   "fieldtype": "Float",
+   "label": "Bandwidth (GB)"
+  },
+  {
+   "fieldname": "backup_storage_gb",
+   "fieldtype": "Float",
+   "label": "Backup Storage (GB)"
+  }
+ ],
+ "links": [],
+ "modified": "2026-10-05 15:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agreements",
+ "name": "Hosting Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Delivery"
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "plan_name",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "plan_name"
+}

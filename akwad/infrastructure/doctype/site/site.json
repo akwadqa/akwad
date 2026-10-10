@@ -1,0 +1,182 @@
+{
+ "actions": [],
+ "autoname": "field:site_name",
+ "creation": "2026-09-29 11:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "site_name",
+  "status",
+  "cb_1",
+  "application_platform",
+  "platform_version",
+  "sb_domain",
+  "domain_registrar",
+  "domain",
+  "column_break_wwvv",
+  "domain_expiry",
+  "sb_environments",
+  "environment",
+  "bench_name",
+  "available",
+  "column_break_xcxx",
+  "server",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Site Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Active\nSuspended\nDecommissioned"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "application_platform",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Application Platform",
+   "options": "Frappe\nERPNext"
+  },
+  {
+   "fieldname": "platform_version",
+   "fieldtype": "Data",
+   "label": "Platform Version"
+  },
+  {
+   "fieldname": "sb_domain",
+   "fieldtype": "Section Break",
+   "label": "Domain"
+  },
+  {
+   "fieldname": "domain",
+   "fieldtype": "Data",
+   "label": "Domain"
+  },
+  {
+   "fieldname": "domain_registrar",
+   "fieldtype": "Link",
+   "label": "Domain Registrar",
+   "options": "Domain Registrar"
+  },
+  {
+   "fieldname": "domain_expiry",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Domain Expiry"
+  },
+  {
+   "fieldname": "sb_environments",
+   "fieldtype": "Section Break",
+   "label": "Environment"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "bench_name",
+   "fieldtype": "Data",
+   "label": "Bench Name"
+  },
+  {
+   "fieldname": "environment",
+   "fieldtype": "Select",
+   "label": "Environment",
+   "options": "Production\nStaging\nDevelopment",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "available",
+   "fieldtype": "Check",
+   "label": "Available"
+  },
+  {
+   "fieldname": "column_break_xcxx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "server",
+   "fieldtype": "Link",
+   "label": "Server",
+   "options": "Server"
+  },
+  {
+   "fieldname": "column_break_wwvv",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "links": [],
+ "modified": "2026-10-04 13:58:01.136412",
+ "modified_by": "Administrator",
+ "module": "Infrastructure",
+ "name": "Site",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Delivery"
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "site_name,domain,customer",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "site_name",
+ "track_changes": 1
+}

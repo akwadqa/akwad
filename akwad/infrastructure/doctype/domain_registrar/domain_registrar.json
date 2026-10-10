@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "autoname": "field:registrar_name",
+ "creation": "2026-09-29 11:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "registrar_name",
+  "disabled",
+  "website",
+  "portal_url"
+ ],
+ "fields": [
+  {
+   "fieldname": "registrar_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Registrar Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
+  },
+  {
+   "fieldname": "portal_url",
+   "fieldtype": "Data",
+   "label": "Portal URL",
+   "options": "URL"
+  }
+ ],
+ "links": [],
+ "modified": "2026-09-30 09:46:35.961221",
+ "modified_by": "Administrator",
+ "module": "Infrastructure",
+ "name": "Domain Registrar",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Delivery"
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "registrar_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "registrar_name",
+ "track_changes": 1
+}

@@ -1,0 +1,296 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2026-09-29 11:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_visit",
+  "naming_series",
+  "agreement",
+  "customer",
+  "cb_1",
+  "site",
+  "status",
+  "section_break_whwj",
+  "start_time",
+  "visit_date",
+  "travel_time_hrs",
+  "column_break_mfyv",
+  "end_time",
+  "duration_hrs",
+  "sb_allowance",
+  "purpose",
+  "allowance_month",
+  "column_break_dlth",
+  "counts_against_allowance",
+  "sb_work",
+  "work_completed",
+  "follow_up_required",
+  "tab_attendance_and_sign_off",
+  "employees",
+  "sb_customer_sign_off",
+  "customer_signatory",
+  "signatory_designation",
+  "signed_on",
+  "cb_2",
+  "signature",
+  "signed_proof",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_visit",
+   "fieldtype": "Tab Break",
+   "label": "Visit"
+  },
+  {
+   "default": "VST-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "VST-.YYYY.-.#####",
+   "print_hide": 1,
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "agreement",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Agreement",
+   "options": "Service Agreement",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "agreement.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Site",
+   "options": "Site"
+  },
+  {
+   "default": "Scheduled",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Scheduled\nCompleted\nCancelled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "visit_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Visit Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "description": "Calculated from start/end time when left blank.",
+   "fieldname": "duration_hrs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Duration (Hrs)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "travel_time_hrs",
+   "fieldtype": "Float",
+   "label": "Travel Time (Hrs)"
+  },
+  {
+   "fieldname": "sb_allowance",
+   "fieldtype": "Section Break",
+   "label": "Allowance"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Purpose",
+   "options": "Training\nComplimentary"
+  },
+  {
+   "default": "1",
+   "fieldname": "counts_against_allowance",
+   "fieldtype": "Check",
+   "label": "Counts Against Allowance"
+  },
+  {
+   "description": "YYYY-MM",
+   "fieldname": "allowance_month",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Allowance Month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_work",
+   "fieldtype": "Section Break",
+   "label": "Work"
+  },
+  {
+   "fieldname": "work_completed",
+   "fieldtype": "Text",
+   "label": "Work Completed",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "follow_up_required",
+   "fieldtype": "Check",
+   "label": "Follow Up Required"
+  },
+  {
+   "fieldname": "tab_attendance_and_sign_off",
+   "fieldtype": "Tab Break",
+   "label": "Attendance and Sign-off"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Table",
+   "label": "Employees",
+   "options": "Visit Employee"
+  },
+  {
+   "fieldname": "sb_customer_sign_off",
+   "fieldtype": "Section Break",
+   "label": "Customer Sign-off"
+  },
+  {
+   "fieldname": "customer_signatory",
+   "fieldtype": "Data",
+   "label": "Customer Signatory"
+  },
+  {
+   "fieldname": "signatory_designation",
+   "fieldtype": "Data",
+   "label": "Signatory Designation"
+  },
+  {
+   "fieldname": "signed_on",
+   "fieldtype": "Date",
+   "label": "Signed On"
+  },
+  {
+   "fieldname": "cb_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "signed_proof",
+   "fieldtype": "Attach",
+   "label": "Signed Proof"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Visit",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_whwj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_mfyv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dlth",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-30 09:49:13.780931",
+ "modified_by": "Administrator",
+ "module": "Service Delivery",
+ "name": "Visit",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Delivery",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "customer,site",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

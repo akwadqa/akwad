@@ -1,1 +1,5 @@
 Akwad
+Agreements
+Infrastructure
+Service Delivery
+Backup Operations

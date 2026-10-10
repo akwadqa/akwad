@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2026-09-29 11:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "site",
+  "server",
+  "enabled",
+  "cb_1",
+  "scope",
+  "content",
+  "frequency",
+  "sb_retention_storage",
+  "retention_days",
+  "retention_copies",
+  "storage_location",
+  "cb_2",
+  "region",
+  "cross_region_copy",
+  "tool_method",
+  "sb_status_from_backup_log",
+  "last_successful_backup",
+  "last_verified_on",
+  "cb_3",
+  "last_verified_by",
+  "last_verification_result"
+ ],
+ "fields": [
+  {
+   "default": "BJB-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "BJB-.#####",
+   "print_hide": 1,
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Site",
+   "options": "Site"
+  },
+  {
+   "fieldname": "server",
+   "fieldtype": "Link",
+   "label": "Server",
+   "options": "Server"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scope",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Scope",
+   "options": "Application\nServer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "content",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Content",
+   "options": "Files\nDatabase",
+   "reqd": 1
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Frequency",
+   "options": "\nDaily\nMonthly"
+  },
+  {
+   "fieldname": "sb_retention_storage",
+   "fieldtype": "Section Break",
+   "label": "Retention & Storage"
+  },
+  {
+   "fieldname": "retention_days",
+   "fieldtype": "Int",
+   "label": "Retention Days"
+  },
+  {
+   "fieldname": "retention_copies",
+   "fieldtype": "Int",
+   "label": "Retention Copies"
+  },
+  {
+   "fieldname": "storage_location",
+   "fieldtype": "Link",
+   "label": "Storage Location",
+   "options": "Backup Storage Location"
+  },
+  {
+   "fieldname": "cb_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "default": "0",
+   "fieldname": "cross_region_copy",
+   "fieldtype": "Check",
+   "label": "Cross Region Copy"
+  },
+  {
+   "fieldname": "tool_method",
+   "fieldtype": "Data",
+   "label": "Tool Method"
+  },
+  {
+   "fieldname": "sb_status_from_backup_log",
+   "fieldtype": "Section Break",
+   "label": "Status (from Backup Log)"
+  },
+  {
+   "fieldname": "last_successful_backup",
+   "fieldtype": "Datetime",
+   "label": "Last Successful Backup",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_verified_on",
+   "fieldtype": "Date",
+   "label": "Last Verified On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_verified_by",
+   "fieldtype": "Link",
+   "label": "Last Verified By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_verification_result",
+   "fieldtype": "Select",
+   "label": "Last Verification Result",
+   "options": "\nPass\nFail\nPartial",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-09-30 11:31:09.772307",
+ "modified_by": "Administrator",
+ "module": "Backup Operations",
+ "name": "Backup Job",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Delivery"
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "site,server",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

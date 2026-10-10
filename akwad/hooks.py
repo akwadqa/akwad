@@ -1,15 +1,21 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-from . import __version__ as app_version
-
 app_name = "akwad"
-app_title = "Akwad"
+app_title = "Akwad System"
 app_publisher = "Akwad"
 app_description = "Customization and Changes for Akwad ERP"
-app_icon = "octicon octicon-file-directory"
-app_color = "grey"
 app_email = "support@akwad.qa"
 app_license = "MIT"
+
+# Apps
+# ------------------
+
+required_apps = ["erpnext"]
+
+# Service agreement data model
+# ------------------
+
+before_migrate = "akwad.install.before_migrate"
+after_migrate = "akwad.install.after_migrate"
+
 
 # Includes in <head>
 # ------------------
@@ -90,27 +96,21 @@ app_license = "MIT"
 # Document Events
 # ---------------
 # Hook on document methods and events
+doc_events = {
+	"Timesheet": {"validate": "akwad.service_utils.timesheet_validate"},
+}
 
 # Scheduled Tasks
 # ---------------
-
-# scheduler_events = {
-# 	"all": [
-# 		"akwad.tasks.all"
-# 	],
-# 	"daily": [
-# 		"akwad.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"akwad.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"akwad.tasks.weekly"
-# 	]
-# 	"monthly": [
-# 		"akwad.tasks.monthly"
-# 	]
-# }
+scheduler_events = {
+	"daily": ["akwad.jobs.daily"],
+	"cron": {
+		# 01:00 on the 1st: Usage Summary for the month just closed
+		"0 1 1 * *": ["akwad.jobs.generate_monthly_usage_summaries"],
+		# 09:00 daily: digest of Backup Jobs due today or overdue
+		"0 9 * * *": ["akwad.jobs.notify_backups_due"],
+	},
+}
 
 # Testing
 # -------
@@ -139,26 +139,14 @@ app_license = "MIT"
 # User Data Protection
 # --------------------
 
-user_data_fields = [
-	{
-		"doctype": "{doctype_1}",
-		"filter_by": "{filter_by}",
-		"redact_fields": ["{field_1}", "{field_2}"],
-		"partial": 1,
-	},
-	{
-		"doctype": "{doctype_2}",
-		"filter_by": "{filter_by}",
-		"partial": 1,
-	},
-	{
-		"doctype": "{doctype_3}",
-		"strict": False,
-	},
-	{
-		"doctype": "{doctype_4}"
-	}
-]
+# user_data_fields = [
+# 	{
+# 		"doctype": "{doctype_1}",
+# 		"filter_by": "{filter_by}",
+# 		"redact_fields": ["{field_1}", "{field_2}"],
+# 		"partial": 1,
+# 	},
+# ]
 #------------------------------------------
 # fixtures = [
 # 	{"dt" : "Custom Field", "filters" : [["module","in", "Akwad"]]},

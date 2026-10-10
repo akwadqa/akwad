@@ -1,0 +1,170 @@
+{
+ "app": "akwad",
+ "charts": [],
+ "content": "[{\"id\": \"blk001\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Work</b></span>\", \"col\": 12}}, {\"id\": \"blk002\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\">Agreements</span>\", \"col\": 12}}, {\"id\": \"blk003\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Service Agreement\", \"col\": 4}}, {\"id\": \"blk004\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Renewal\", \"col\": 4}}, {\"id\": \"blk005\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Usage Summary\", \"col\": 4}}, {\"id\": \"blk006\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\">Infrastructure</span>\", \"col\": 12}}, {\"id\": \"blk007\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Site\", \"col\": 4}}, {\"id\": \"blk008\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Server\", \"col\": 4}}, {\"id\": \"blk009\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Hosting Usage Log\", \"col\": 4}}, {\"id\": \"blk010\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\">Service Delivery</span>\", \"col\": 12}}, {\"id\": \"blk011\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Visit\", \"col\": 4}}, {\"id\": \"blk012\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Ticket\", \"col\": 4}}, {\"id\": \"blk013\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Service Record\", \"col\": 4}}, {\"id\": \"blk014\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Timesheet\", \"col\": 4}}, {\"id\": \"blk015\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\">Backup Operations</span>\", \"col\": 12}}, {\"id\": \"blk016\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Backup Job\", \"col\": 4}}, {\"id\": \"blk017\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Backup Log\", \"col\": 4}}, {\"id\": \"blk018\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Reports</b></span>\", \"col\": 12}}, {\"id\": \"blk019\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\">Agreements</span>\", \"col\": 12}}, {\"id\": \"blk020\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Coverage by Customer and Site\", \"col\": 6}}, {\"id\": \"blk021\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Expiring Agreements and Warranties\", \"col\": 6}}, {\"id\": \"blk022\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Agreement Review\", \"col\": 6}}, {\"id\": \"blk024\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Support Consumption\", \"col\": 6}}, {\"id\": \"blk025\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\">Infrastructure</span>\", \"col\": 12}}, {\"id\": \"blk026\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Site and Server Register\", \"col\": 6}}, {\"id\": \"blk027\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\">Service Delivery</span>\", \"col\": 12}}, {\"id\": \"blk029\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Effort by Agreement and Activity Type\", \"col\": 6}}, {\"id\": \"blk031\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\">Backup Operations</span>\", \"col\": 12}}, {\"id\": \"blk032\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Backup Compliance\", \"col\": 6}}]",
+ "creation": "2026-10-01 09:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "grid",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Akwad System",
+ "links": [],
+ "modified": "2026-10-05 14:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Akwad",
+ "name": "Akwad System",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "format": "{} Active",
+   "icon": "file-text",
+   "label": "Service Agreement",
+   "link_to": "Service Agreement",
+   "stats_filter": "[[\"Service Agreement\", \"status\", \"in\", [\"Active\", \"Expiring Soon\"]]]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "format": "{} Open",
+   "icon": "repeat",
+   "label": "Renewal",
+   "link_to": "Renewal",
+   "stats_filter": "[[\"Renewal\", \"status\", \"in\", [\"Not Started\", \"Contacted\", \"Proposal Sent\", \"Negotiating\"]]]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "icon": "calculator",
+   "label": "Usage Summary",
+   "link_to": "Usage Summary",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "format": "{} Active",
+   "icon": "globe",
+   "label": "Site",
+   "link_to": "Site",
+   "stats_filter": "[[\"Site\", \"status\", \"=\", \"Active\"]]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "icon": "server",
+   "label": "Server",
+   "link_to": "Server",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "icon": "activity",
+   "label": "Hosting Usage Log",
+   "link_to": "Hosting Usage Log",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "format": "{} Scheduled",
+   "icon": "map-pin",
+   "label": "Visit",
+   "link_to": "Visit",
+   "stats_filter": "[[\"Visit\", \"status\", \"=\", \"Scheduled\"]]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "format": "{} Open",
+   "icon": "ticket",
+   "label": "Ticket",
+   "link_to": "Ticket",
+   "stats_filter": "[[\"Ticket\", \"status\", \"in\", [\"Open\", \"In Progress\", \"Waiting on Customer\"]]]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "icon": "clipboard-list",
+   "label": "Service Record",
+   "link_to": "Service Record",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "icon": "clock",
+   "label": "Timesheet",
+   "link_to": "Timesheet",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "icon": "database",
+   "label": "Backup Job",
+   "link_to": "Backup Job",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "format": "{} Failed",
+   "icon": "list-checks",
+   "label": "Backup Log",
+   "link_to": "Backup Log",
+   "stats_filter": "[[\"Backup Log\", \"status\", \"=\", \"Failed\"]]",
+   "type": "DocType"
+  },
+  {
+   "label": "Coverage by Customer and Site",
+   "link_to": "Coverage by Customer and Site",
+   "report_ref_doctype": "Service Agreement",
+   "type": "Report"
+  },
+  {
+   "label": "Expiring Agreements and Warranties",
+   "link_to": "Expiring Agreements and Warranties",
+   "report_ref_doctype": "Service Agreement",
+   "type": "Report"
+  },
+  {
+   "label": "Agreement Review",
+   "link_to": "Agreement Review",
+   "report_ref_doctype": "Usage Summary",
+   "type": "Report"
+  },
+  {
+   "label": "Support Consumption",
+   "link_to": "Support Consumption",
+   "report_ref_doctype": "Usage Summary",
+   "type": "Report"
+  },
+  {
+   "label": "Site and Server Register",
+   "link_to": "Site and Server Register",
+   "report_ref_doctype": "Site",
+   "type": "Report"
+  },
+  {
+   "label": "Effort by Agreement and Activity Type",
+   "link_to": "Effort by Agreement and Activity Type",
+   "report_ref_doctype": "Timesheet",
+   "type": "Report"
+  },
+  {
+   "label": "Backup Compliance",
+   "link_to": "Backup Compliance",
+   "report_ref_doctype": "Backup Job",
+   "type": "Report"
+  }
+ ],
+ "title": "Akwad System",
+ "type": "Workspace"
+}

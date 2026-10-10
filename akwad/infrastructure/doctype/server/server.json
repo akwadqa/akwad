@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "autoname": "field:instance_name",
+ "creation": "2026-09-29 11:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "instance_name",
+  "hosting_provider",
+  "account",
+  "region",
+  "status",
+  "instance_id",
+  "instance_type",
+  "server_ip",
+  "ssm_target",
+  "sb_specification",
+  "os",
+  "vcpu",
+  "ram_gb",
+  "disk_gb",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "instance_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Instance Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "hosting_provider",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Hosting Provider",
+   "options": "Hosting Provider"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Data",
+   "label": "Account"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Region"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Active\nStopped\nDecommissioned"
+  },
+  {
+   "fieldname": "instance_id",
+   "fieldtype": "Data",
+   "label": "Instance Id"
+  },
+  {
+   "fieldname": "instance_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Instance Type"
+  },
+  {
+   "fieldname": "server_ip",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Server IP"
+  },
+  {
+   "description": "SSM target identifier only.",
+   "fieldname": "ssm_target",
+   "fieldtype": "Data",
+   "label": "SSM Target"
+  },
+  {
+   "fieldname": "sb_specification",
+   "fieldtype": "Section Break",
+   "label": "Specification"
+  },
+  {
+   "fieldname": "os",
+   "fieldtype": "Data",
+   "label": "OS"
+  },
+  {
+   "fieldname": "vcpu",
+   "fieldtype": "Int",
+   "label": "vCPU"
+  },
+  {
+   "fieldname": "ram_gb",
+   "fieldtype": "Float",
+   "label": "RAM (GB)"
+  },
+  {
+   "fieldname": "disk_gb",
+   "fieldtype": "Float",
+   "label": "Disk (GB)"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2026-10-05 15:08:22.112246",
+ "modified_by": "Administrator",
+ "module": "Infrastructure",
+ "name": "Server",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Delivery"
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "instance_name,server_ip",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "instance_name",
+ "track_changes": 1
+}

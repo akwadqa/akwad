@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "naming_series:",
+ "creation": "2026-09-29 11:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "server",
+  "site",
+  "log_date",
+  "source",
+  "sb_measurements",
+  "disk_used_gb",
+  "files_size_gb",
+  "db_size_gb",
+  "cb_1",
+  "avg_cpu",
+  "avg_ram",
+  "bandwidth_gb",
+  "actual_cost"
+ ],
+ "fields": [
+  {
+   "default": "HUL-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "HUL-.YYYY.-.#####",
+   "print_hide": 1,
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "server",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Server",
+   "options": "Server"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Site",
+   "options": "Site"
+  },
+  {
+   "default": "Today",
+   "fieldname": "log_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Log Date",
+   "reqd": 1
+  },
+  {
+   "default": "Manual",
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "Manual\nAPI\nScript"
+  },
+  {
+   "fieldname": "sb_measurements",
+   "fieldtype": "Section Break",
+   "label": "Measurements"
+  },
+  {
+   "fieldname": "disk_used_gb",
+   "fieldtype": "Float",
+   "label": "Disk Used (GB)"
+  },
+  {
+   "fieldname": "files_size_gb",
+   "fieldtype": "Float",
+   "label": "Files Size (GB)"
+  },
+  {
+   "fieldname": "db_size_gb",
+   "fieldtype": "Float",
+   "label": "DB Size (GB)"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "avg_cpu",
+   "fieldtype": "Percent",
+   "label": "Avg CPU"
+  },
+  {
+   "fieldname": "avg_ram",
+   "fieldtype": "Percent",
+   "label": "Avg RAM"
+  },
+  {
+   "fieldname": "bandwidth_gb",
+   "fieldtype": "Float",
+   "label": "Bandwidth (GB)"
+  },
+  {
+   "fieldname": "actual_cost",
+   "fieldtype": "Currency",
+   "label": "Actual Cost"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-09-29 11:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Infrastructure",
+ "name": "Hosting Usage Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Delivery",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "site,server",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

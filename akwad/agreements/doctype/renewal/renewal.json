@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "autoname": "format:REN-{agreement}-{#####}",
+ "creation": "2026-09-29 11:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "agreement",
+  "customer",
+  "cb_1",
+  "due_date",
+  "follow_up_by",
+  "status",
+  "new_agreement",
+  "next_action_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "agreement",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Agreement",
+   "options": "Service Agreement",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "agreement.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Due Date",
+   "reqd": 1
+  },
+  {
+   "default": "Not Started",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Not Started\nContacted\nProposal Sent\nNegotiating\nRenewed\nUpgraded\nNot Renewing"
+  },
+  {
+   "depends_on": "eval:['Renewed','Upgraded'].includes(doc.status)",
+   "description": "Required to submit as Renewed or Upgraded.",
+   "fieldname": "new_agreement",
+   "fieldtype": "Link",
+   "label": "New Agreement",
+   "options": "Service Agreement"
+  },
+  {
+   "fieldname": "next_action_date",
+   "fieldtype": "Date",
+   "in_standard_filter": 1,
+   "label": "Next Action Date"
+  },
+  {
+   "fieldname": "follow_up_by",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Follow Up By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Renewal",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-30 10:29:28.756783",
+ "modified_by": "Administrator",
+ "module": "Agreements",
+ "name": "Renewal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Delivery"
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "agreement,customer",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
